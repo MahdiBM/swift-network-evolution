@@ -31,7 +31,7 @@ jobs:
     # Frame.span, so every build and test configuration fails. Flip this back to
     # true once the upstream fix lands.
     if: false
-    uses: swiftlang/github-workflows/.github/workflows/swift_package_test.yml@0.0.11
+    uses: swiftlang/github-workflows/.github/workflows/swift_package_test.yml@0.0.14
     with:
       swift_nightly_flags: "--build-system native -Xswiftc -warnings-as-errors"  # workaround nightly-main issue
       enable_linux_checks: true
